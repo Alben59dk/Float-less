@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+// variables
+@colorea: #ff8f56;
+@coloreb: #fe4258;
+@colorec: #8ea6b4;
+@colored: #e7eff3;
+@coloref: #984a59;
+@decalage: 50px 0;
+@particle: 18px;
+
+* {
+    box-sizing: border-box;
+}
+header, section, footer, aside, nav, main, article, figure {
+    display: block; 
+}
+div, header, section, footer, aside, nav, main, article, figure, h1, h2, h3, h4, h5, h6, p, a, ul, li, figure, figcaption, class, img { 
+	margin: 0;
+	padding: 0;
+}
+img, object, embed, canvas, video, audio, picture, svg {
+	max-width: 100%;
+	height: auto;
+}
+body {
+    margin: 0;
+    background-color: @colorec;
+    font-family: 'Roboto', sans-serif; 
+}
+
+main {
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+.clear {
+	clear: both;
+}
+
+header {
+    background-color: @coloreb;
+    padding: @decalage;
+    h1 {
+        font-weight: 48px;
+        font-weight: 300;
+        color: @colored;
+        margin-bottom: 30px;
+    }
+    h2 {
+        font-size: 30px;
+        font-weight: 300;
+        color: @colored;
+        margin-bottom: 50px;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 700;
+        color: @coloref;
+    }
+}
+
+section.float {
+    background-color: @colored;
+    padding: @decalage;
+    article {
+        width: 300px;
+        background-color: @colorec;
+        color: @colored;
+        float: left;
+        margin: 10px;
+        padding: 25px;
+        text-align: left;
+        font-weight: 300;
+        h2 {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+section.clearing {
+    background-color: @coloreb;
+    padding: @decalage;
+    color: @colored;
+    h2 {
+        font-size: 30px;
+        font-weight: 300;
+        margin-bottom: 50px;
+    }
+    h3 {
+        margin-bottom: 50px;
+        font-weight: 300;
+        font-size: 30px;
+    }
+    p {
+        font-size: @particle;
+        font-weight: 700;
+    }
+}   
+
+section.passion {
+    background-color: @colored;
+    padding: @decalage;
+    article {
+        width: 220px;
+        background-color: @colorea;
+        color: @colored;
+        float: left;
+        margin: 10px;
+        padding: 25px 10px;
+        font-weight: 300;
+        h2 {
+            color: @coloreb;
+            font-size: 80px;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        p {
+            border-top: solid 2px @colored;
+            border-bottom: solid 2px @colored;
+            font-size: 30px;
+            font-weight: 300;
+            margin-bottom: 50px;
+        }
+        a {
+            text-decoration: none;
+            background-color: @colored;
+            color: @coloref;
+            font-weight: 700;
+            padding: 10px 25px;
+            margin-bottom: 15px;
+            transition: all 0.5s;
+            &:hover {
+                background-color: red;
+            }
+        }
+    }      
+}
+
+footer {
+    background-color: @coloref;
+    padding: @decalage;
+    h2 {
+        font-size: 48px;
+        font-weight: 300;
+        margin-bottom: 50px;
+        color: @colored;
+    }
+    p {
+        color: @colorea;
+    }
+}
